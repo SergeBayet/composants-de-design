@@ -1,0 +1,52 @@
+@import "compass/reset";
+/* Example CSS file */
+body {
+	width:600px;
+	margin:auto;
+	
+ font-family: 'ABeeZee';font-size: 22px;
+
+}
+h2 {
+	font-size:15px;
+	font-weight:bold;
+	padding-bottom:4px;
+}
+form {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(12, 1fr);
+	grid-column-gap: 23px;
+	grid-row-gap: 0px;
+} 
+
+.name {
+	grid-column-start: 1;
+	grid-column-end:2;
+	.firstname {
+		width:70px;
+	}
+	.lastname {
+		width:117px;
+	}
+	input {
+		display:inline-block;
+		position:relative;
+	}
+	label {
+		display:inline-block;
+		position: absolute;
+		margin-top: 30px;
+		font-size: small;
+	}
+
+}
+.gender {
+	
+	margin-top:15px;
+	grid-column-start: 1;
+	grid-column-end:2;
+	select {
+		width:100%;
+	}
+}
